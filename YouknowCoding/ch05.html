@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태그의 구분과 인라인 텍스트 요소 (https://youtu.be/iATpw-BmTK4 발췌)</title>
+</head>
+<body>
+    <h1>태그의 구분</h1>
+    <h3>블록 레벨 요소 : </h3>
+    <p>자기가 속한 영역의 너비를 모두 차지하여 블록을 형성</p>
+
+    <h3>인라인 요소</h3>
+    <p>자기에게 필요한 만큼의 공간만 차지</p>
+
+    <br>
+    <hr>
+
+    <h1>제목을 표시하는 큰 텍스트!</h1>
+    <p>문단을 나나태는 작은(?) 텍스트! 
+        이 태그는 블록 요소를 만들까요?
+        아니면 인라인 요소를 만들까요?
+    </p>
+    <h3>정답 : </h3>
+    <p>h태그와 p태그는 모두 영역을 차지하는 블록 레벨 요소이다.
+        <br>이는 크롬에서 F12를 눌러 개발자 도구에서 확인 가능하다.
+    </p>
+
+    <hr>
+    <br>
+
+    <h1>이제 인라인 태그를 사용해보자!</h1>
+    <p>아래 문장들은 해당 태그에 해당하는 부분에 color나 background-color 스타일을 지정해둔 예제이다.</p>
+    <p><strong style="color:red;">strong 태그는 감싸고 있는 콘텐츠를 굵게 표시하는 태그이며, </strong>인라인 요소를 만드는 태그이다.</p>
+    <p><em style="color: red;;">em 태그는 감싸고 있는 콘텐츠를 기울여 이탤릭체로 표시하는 태그이며.</em> 인라인 요소를 만드는 태그이다.</p>
+    <p><mark style="background-color:red;">mark 태그는 감싸고 있는 콘텐츠에 형관펜 표시를 더해주는 태그이며,</mark> 인라인 요소를 만드는 태그이다.</p>
+    <br>
+    <hr>
+    <p><strong>위 태그를 모두 이용 하면,</strong> <em>이러한 형태가 되는데</em> <mark>블록레벨 요소인 p태그 안에 인라인 요소를 추가한 것이다.</mark></p>
+</body>
+</html>
