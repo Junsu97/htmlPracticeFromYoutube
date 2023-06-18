@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 요소 만들기</title>
+</head>
+<body>
+    <h1>input 태그</h1>
+    <p>사용자로부터 값을 입력받을 수 있는 대화형 컨트롤(또는 '필드')을 나타낸다.
+        <br>기본적으로 인라인 요소이며, 단일태그이다.
+    </p>
+    <h2>input의 핵심, type 속성</h2>
+    <p>type의 값에 따라 입력 요소의 형태나 입력 데이터 유형등이 달라진다.
+        <br>사용 가능한 type은 20여 가지이며, 기본값은 text이다.
+    </p>
+    <img src="img/input.png">
+    <p>위 요소는 전부 input태그로 만든 요소이며, 클릭도 입력 유형 중 하나이다.</p>
+
+    <br>
+    <p>input 태그에는 name 식별자를 추가할 수 있다.
+        <br> 이는 각각의 입력 항목에 대한 이름이다.
+    </p>
+    <input type="text" name="nickname" />
+    <input type="text" name="job" />
+    <p>name 식별자를 통해 input을 식별하는 것은 나중에 서버 프로그래밍이나 javascript에서 원활한 처리를 위해 꼭 필요한 작업이다.</p>
+
+     <h2>실습</h2>
+     <p>placeholder 속성은 메시지가 입력되기 전 나타나는 문자열이며, maxlength는 text의 최대 길이이다.</p>
+    <input name="text" type="text" placeholder="5글자 까지만 입력해주세요." maxlength="5"/> <br> <br>
+    <p>value 속성을 토해 버튼에 글자를 나타낼 수 있다.</p>
+    <input name="button" type="button" value="PUSH"/> <br> <br>
+    <input name="color" type="color"/>색을 골라보세요! <br> <br>
+    <p>최소값과 최대값은 min과 max로 단위는 step속성으로 정한다.
+        <br> 현재 range의 값은 javascrip에서 값을 받아 출력하는 등 처리한다. 
+    </p>
+    <input name="range" type="range" min="0" max="100" step="10"/> <br> <br>
+    <input name="date" type="date"/> <br> <br>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크 만들기</title>
+</head>
+<body>
+    <h1>링크</h1>
+    <p>링크란 현재 문서에서 다른 문서로 이동할 수 있는 수단이다.</p>
+    <h3>링크는 anchor</h3>
+    <p>anchor를 뜻하는 a 태그 요소는 href 속성을 통해 다른 페이지, 전화번호, 이메일 주소와 그 외 다른 url로 연결할 수 있는 링크(연결)를 만든다.
+        <br>인라인 요소이며, 콘텐츠는 주로 링크의 목적지를 나타냄.
+        <br> 텍스트 대신 이미지를 삽입하여 이미지 클릭시 해당 링크로 이동하게 만들 수도 있다.
+    </p>
+    <a href="https://www.naver.com"><img src="img/tazza.jpg" width="300"><br>네이버는 무너졌냐 이쉐키야.</a>
+
+    <h3>a 태그의 target 속성</h3>
+    <p>target 속성을 이용하면 새로운 문서를 열 때 현재 탭에서 열지, 새로운 탭에서 열지 결정할 수 있다.</p>
+    <p>_self 현재 탭에서 열기 (기본 값); _blank 새 탭에서 열기</p>
+
+    <a href="https://www.naver.com" target="_self">네이버는 무너졌냐 이쉐키야.(현재 탭 - 기본 값)</a>
+    <br>
+    <a href="https://www.naver.com" target="_blank">네이버는 무너졌냐 이쉐키야.(새탭)</a>
+
+    <h3>연락을 해보자</h3>
+    <p>a 태그의 href에는 웹문서의 주소 뿐 아니라 전화번호나 메일 주소등을 지정할 수도 있다. 이 때 각 유형별로 추가되는 텍스트가 있다.</p>
+    <p>tel - 전화 mailto- 메일쓰기</p>
+    <a href="tel:010-1234-1234" target="_self">전화 걸기</a>
+    <a href="mailto:이메일주소@naver.com" target="_blank">메일 쓰기</a>
+</body>
+</html>

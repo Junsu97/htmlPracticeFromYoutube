@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select 그리고 textarea</title>
+</head>
+<body>
+    <h1>select - 보기중에 고르기</h1>
+    <p>select는 다수의 옵션(선택지)을포함할 수 있는 선택 메뉴이다.
+        <br> 메뉴 안에 포함되는 옵션은 option 태그를 사용해 표시한다.
+        <br> 인라인 요소이다.
+    </p>
+    <h2>이름과 값</h2>
+    <p>select에는 input과 마찬가지로 name을 지정할 수 있으며, 각각의 option에는 value속성을 지정할 수 있다.
+        <br>value는 실제로 처리될 값을 나타냄.
+    </p>
+    <label>예시 - 카페</label>
+    <br>
+    <select name="cafe">
+        <option value="starbucks">스타벅스</option>
+        <option value="coffeebean">커피빈</option>
+        <option value="ediya">이디야</option>
+        <option value="pascucci">파스쿠찌</option>
+    </select>
+
+    <hr>
+
+    <h1>textarea</h1>
+    <p>textarea는 여러 줄의 일반 텍스트를 입력할 수 있는 입력 요소이다.
+        <br>
+        textarea 역시 name을 추가하여 구별해줄 수 있는 입력 요소이다.
+        <br> 인라인 요소이다.
+    </p>
+    <label>예시</label>
+    <textarea name="letter"></textarea>
+    <p>input에는 한 줄밖에 쓸 수 없지만, textarea는 여러줄 입력이 가능하다.</p>
+
+
+    <br>
+    <hr>
+    <h1>실습</h1>
+    
+    <h3>키우고 싶은 동물 고르기</h3>
+    <select name="pet" multiple>
+        <option value="dog">강아지</option>
+        <option value="cat">고양이</option>
+        <option value="hamster">햄스터</option>
+        <option value="parrot">앵무새</option>
+    </select>
+    <p>multiple 속성은 값을 필요로 하지 않거나 여러개를 선택하라는 속성이며 특별한 서식없이 multiple을 기술하면 된다.
+        <br>여러개를 선택하는 법은 Ctrl을 누른 채로 클릭하면 된다.
+        <br>selected 옵션은 기본적으로 선택을 시켜놓는 옵션이다.
+    </p>
+    <select name="pet" multiple>
+        <option value="dog" >강아지</option>
+        <option value="cat"selected>고양이</option>
+        <option value="hamster">햄스터</option>
+        <option value="parrot">앵무새</option>
+    </select>
+
+    <br>
+    <hr>
+    <p>textarea는 여러줄의 텍스틀 입력할 수 있는 인라인 요소이다.
+        <br> 여러줄이 생기면 스크롤바가 자동으로 생김
+
+    </p>
+    <textarea>기본적으로 쓰여 있는 텍스트</textarea>
+    
+    <p>rows는 행수 cols는 몇개 정도의 text크기만큼의 열수(가로 너비)</p>
+    <textarea name="content" rows="10" cols="10">기본적으로 쓰여 있는 텍스트</textarea>
+</body>
+</html>
