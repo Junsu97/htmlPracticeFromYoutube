@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="author" content="유노코딩">
+    <meta name="keywords" content="메타태그, 학습">
+    <meta name="description" content="메타태그를 추가하는 방법">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meta태그</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+     
+</head>
+<body>
+    <h1>meta 태그</h1>
+    <p><strong>meta 태그는 HTML 문서에 대한 메타데이터를 정의한다.</strong>
+    <br>메타 데이터란 데이터에 대한 데이터, 즉 '정보'를 의미함.
+    <br>meta 태그는 항상 head 태그의 안에 들어가며,<br>
+    일반적으로 문자 세트, 페이지 설명, 키워드, 문서의 작성자 및 뷰포트 설정을 지정하는데 사용된다.
+    </p>
+
+    <h3>meta 태그를 사용하는 이유</h3>
+    <p>meta 태그를 사용하지 않아도 웹페이지를 제작하는데 문제는 없지만,
+    <br>검색 엔진이 페이지를 검색할 때 참고할 수 있고, 검색결과에도 반영할 수 있다.
+    </p>
+
+    <br>
+    <hr>
+
+    <h2>meta 태그가 종하는 메타데이터의 유형 & 속성</h2>
+    <ul>
+        <li>charset : 문자 세트</li>
+        <li>http-equiv : 콘텐츠 속성 정보에 대한 http 헤더</li>
+        <li>name : 문서 정보</li>
+        <li>content : 메타 데이터의 내용 </li>
+    </ul>
+    등등..
+    <h3>charset</h3>
+    <img src="img/charset.png">
+    <p><strong>문자 인코딩에 대한 요약 정보를 기입하는 속성이다.</strong>
+        <br>
+        문자 인코딩이란 한글을 표시하기 위해 문자 세트를 지정하는 작업으로, 영문과 한글을 모두 사용하기 위해 utf-8방식을 사용하는 것이 좋다.
+        <br>인코딩을 명확하게 기입해두지 않으면 웹브라우저 설정 상황에 따라 자동으로 인코딩을 추정해서 처리한다.
+        <br>-> 즉 , 문자가 깨질 가능성이 생김.
+    </p>
+    <br>
+    <hr>
+    <h3>http-equiv</h3>
+    <img src="img/http-equiv.png">
+    <p><strong>콘텐츠 속성의 정보/값에 대한 HTTP 헤더를 제공한다.</strong>
+        <br>HTTP란 인터넷에서 데이터를 주고 받을 수 있는 프로토콜이다.
+        <br> 위 사진의 첫번째 예시는 인터넷 익스플로러를 사요하는 경우 최신버전을 사용하라는 뜻.
+    </p>
+    <br>
+    <hr>
+    <h3>name</h3>
+    <img src="img/nametag.png">
+    <p>name 속성을 이름으로, content 속성을 값으로 하여 문서 정보를 <strong>이름+값 쌍의 형태</strong>로 제공할 때 사용할 수 있다.</p>
+</body>
+</html>
